@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Linear+B&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+:root{
+    --subcor: rebeccapurple;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-color: #252525;
+    color: white;
+}
+header{
+   padding:  32px;
+   border-bottom: 1px solid var(--subcor);
+   background-color: rgba(0, 0, 0, 0.1);
+}
+.links{
+    text-align: center; 
+}
+.links a {
+    color: white;
+    font-size: 20px ;
+    line-height: 30px;
+    margin: 0 20px;
+    text-decoration: none;
+    font-family: 'Noto Sans Linear B', sans-serif;
+
+}
+.links a:hover{
+    color:var(--subcor);
+    transition: color 700ms;
+    border-bottom: var(--subcor) solid ;
+}
+   
+.card{
+    background-color:white;
+    min-height: 400px;
+    width: 800px;
+    margin: 45px auto;
+    color:rgba(0, 0, 0,  0.678);
+    font-family: "Anta", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 2px 2px 25px 3px var(--subcor);
+    
+   
+    animation-name: up ;
+    animation-duration: 890ms;
+    
+   
+   
+}
+
+
+@keyframes up{
+    0%{
+       opacity: 0;
+       transform: translateY(15px);
+       transition-timing-function: ease-in ;
+    
+    }
+    100%{
+        opacity: 1;
+       
+    }
+}
+
+ .details{
+    padding: 32px;
+ }
+ .details .item{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+    padding: 16px 0;
+ }
+  .details .item:last-child{
+    border: none;
+  }
+  .details h3,
+  .details .item div:nth-child(1){
+    color: #aaa;
+    font-size:  18px;
+    line-height:  24px;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+  }
+  .details .item div:nth-child(2){
+    color: #555;
+    font-size:  18px;
+    font-weight: bold;
+  }
+   .details h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--subcor);
+    }
+    .details .item span{
+    padding: 8px 16px;
+    background-color:var(--subcor);
+    border-radius: 16px;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    color:rgba(0, 0, 0,  0.678);
+    text-transform:uppercase;
+    font-size: 12px;
+    }
+
+        /*-- FORM --*/
+
+input{
+    width: 100%;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+input[type="radio"]{
+    width: unset;
+    margin-right: 16px;
+    cursor: pointer;
+   
+}
+input::placeholder{
+    font-size: 16px;
+    font-weight: normal;
+}
+button[type="submit"]{
+    padding: 8px 32px;
+    background-color: var(--subcor);
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 32px;
+    font-size: 16px;
+    font-family: "Anta", sans-serif;
+}
+button:hover[type="submit"]{
+    padding: 8px 32px;
+    width: 100%;
+    background-color: aqua;
+    border-radius: 6px;
+    margin-top: 32px;
+    font-size: 16px;
+    font-family: "Anta", sans-serif;
+    cursor: pointer;
+}

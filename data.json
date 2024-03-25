@@ -1,0 +1,28 @@
+{
+  "instructors": [
+    {
+      "avatar_URL": "https://www.google.com",
+      "birth": "2004-03-23",
+      "gender": "F",
+      "services": "musculação"
+    },
+    {
+      "avatar_URL": "https://www.google.com",
+      "birth": "2004-03-23",
+      "gender": "M",
+      "services": "musculação"
+    },
+    {
+      "avatar_URL": "https://www.google.com",
+      "birth": "2004-03-23",
+      "gender": "M",
+      "services": "musculação"
+    },
+    {
+      "avatar_URL": "https://www.animes.get",
+      "birth": "2090-02-21",
+      "gender": "M",
+      "services": "crossfit"
+    }
+  ]
+}

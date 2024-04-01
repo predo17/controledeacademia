@@ -9,6 +9,7 @@ exports.post = function(req,res){
         if(req.body[key]== ""){
         return res.send ("Responda todo os dados")
         }
+        
    
     }
     data.instructors.push(req.body)
@@ -16,8 +17,9 @@ exports.post = function(req,res){
     fs.writeFile("data.json",JSON.stringify(data,null,2),function(err){
         if(err) return res.send ("Erro ao salvar o arquivo")
         return res.redirect("/instructos")
+        
     })
 
     return res.send (req.body)
-    
+  
 }

@@ -2,31 +2,27 @@
   "instructors": [
     {
       "id": 1,
-      "avatar_URL": "https://www.google.com",
-      "birth": 238464000000,
-      "gender": "F",
-      "created_at": 1712411478797
+      "avatar_URL": "https://www.github.com",
+      "birth": 888192000000,
+      "gender": "M",
+      "services": "crossfit",
+      "created_at": 1712497742771
     },
     {
       "id": 2,
-      "avatar_URL": "https://www.google.com",
-      "birth": 238464000000,
-      "gender": "M",
-      "created_at": 1712412173210
+      "avatar_URL": "https://www.youtube.com",
+      "birth": 578188800000,
+      "gender": "F",
+      "services": "natação",
+      "created_at": 1712497907784
     },
     {
       "id": 3,
-      "avatar_URL": "https://www.hous.xyz",
-      "birth": 230601600000,
+      "avatar_URL": "https:// www.br.google.com",
+      "birth": 948585600000,
       "gender": "M",
-      "created_at": 1712414422769
-    },
-    {
-      "id": 4,
-      "avatar_URL": "https://hentai.com",
-      "birth": 893289600000,
-      "gender": "M",
-      "created_at": 1712415126793
+      "services": "crossfit,musculação",
+      "created_at": 1712498078730
     }
   ]
 }

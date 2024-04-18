@@ -23,6 +23,14 @@
       "gender": "M",
       "services": "crossfit,musculação",
       "created_at": 1712498078730
+    },
+    {
+      "id": 4,
+      "avatar_URL": "https:// www.goglo.com",
+      "birth": 1713312000000,
+      "gender": "M",
+      "services": "crossfit",
+      "created_at": 1713442833773
     }
   ]
 }

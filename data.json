@@ -2,35 +2,39 @@
   "instructors": [
     {
       "id": 1,
-      "avatar_URL": "https://www.github.com",
-      "birth": 888192000000,
+      "name": "Lucas",
+      "avatar_URL": "https://www.youtube.com",
+      "birth": 1715385600000,
       "gender": "M",
-      "services": "crossfit",
-      "created_at": 1712497742771
+      "services": "musculação",
+      "created_at": 1715443544645
     },
     {
       "id": 2,
-      "avatar_URL": "https://www.youtube.com",
-      "birth": 578188800000,
+      "name": "Ana ",
+      "avatar_URL": "https://www.github.com",
+      "birth": 1528675200000,
       "gender": "F",
-      "services": "natação",
-      "created_at": 1712497907784
+      "services": "crossfit,musculação",
+      "created_at": 1715443620411
     },
     {
       "id": 3,
-      "avatar_URL": "https:// www.br.google.com",
-      "birth": 948585600000,
+      "name": "Lula",
+      "avatar_URL": "https://www.gove.com.br",
+      "birth": -78192000000,
       "gender": "M",
-      "services": "crossfit,musculação",
-      "created_at": 1712498078730
+      "services": "9 dedos kkk",
+      "created_at": 1715443793047
     },
     {
       "id": 4,
-      "avatar_URL": "https:// www.goglo.com",
-      "birth": 1713312000000,
+      "name": "Ratinho",
+      "avatar_URL": "https://www.sbt.com.br",
+      "birth": -7084800000,
       "gender": "M",
-      "services": "crossfit",
-      "created_at": 1713442833773
+      "services": "come queijo kkk",
+      "created_at": 1715443930474
     }
   ]
 }

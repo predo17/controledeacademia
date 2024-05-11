@@ -22,13 +22,13 @@ exports.post = function(req,res){
         return res.send ("Responda todo os dados")
         }
     }
-    let {avatar_URL,birth,gender,services,created_at} = req.body
+    let {name,avatar_URL,birth,gender,services,created_at} = req.body
 
     birth = Date.parse (req.body.birth)
     created_at = Date.now()
     id = Number (data.instructors.length)+1
 
-    data.instructors.push({id,avatar_URL,birth,gender,services,created_at})
+    data.instructors.push({id,name,avatar_URL,birth,gender,services,created_at})
 
 
     fs.writeFile("data.json",JSON.stringify(data,null,2),function(err){

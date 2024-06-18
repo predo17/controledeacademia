@@ -1,6 +1,6 @@
 const fs = require ("fs")
 const data = require ("./data.json")
-const { name } = require("browser-sync")
+const { name, create } = require("browser-sync")
 
 exports.show = function(req,res){
     const {id} = req.params
@@ -10,7 +10,13 @@ exports.show = function(req,res){
     })
     if (!foundInstructor) return res.send("Instructor não encontrado")
 
-    return res.render ("instructors/show",{instructor:foundInstructor})
+    const instructor = {
+        ...foundInstructor,
+        birth:'',
+        created_at:'',
+    }
+
+    return res.render ("instructors/show",{instructor})
 }
 
 exports.post = function(req,res){

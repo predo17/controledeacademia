@@ -3,7 +3,7 @@
 {% block content  %}
 
 <form class="card" method="post" action="/instructors">
-    <section class="avatar" style="  background: url(https://source.unsplash.com/collection/3465564/1080x1080) no-repeat center center / cover ">       
+    <section class="avatar" style="background: url('https://th.bing.com/th/id/R.bc1d7426a8e9dde44193b11af877e240?rik=QERPDXsnXQfxGg&riu=http%3a%2f%2fwww.acquaville.com.br%2faulas-de-ginastica%2fimagens%2facademia-de-musculacao-completa.jpg&ehk=60PXzLDV5wzuTHMW%2bhso5dUpa2Li4Rnbm0OoCRexEWk%3d&risl=&pid=ImgRaw&r=0g/') no-repeat center center / cover ">       
     </section>
     <section class="details">
 
@@ -22,24 +22,24 @@
             <div>
                 <input type="text"
                 name="name"
-                placeholder="Nome do novo instructor">
+                placeholder="Nome do novo instructor" required>
             </div>
            </div>
 
            <div class="item">
                <div>Data de Nascimento</div>
                <div> 
-                <input type="date" 
-                       name="birth"
-                >
+                <input
+                 type="date" 
+                 name="birth" required>
                </div>
            </div>
 
            <div class="item">
                <div>Sexo</div>
                <div>
-                <span><input type="radio" name="gender" value="M" checked >-MASCULINO</span>
-                <span><input type="radio" name="gender" value="F"  >-FEMENINO</span>
+                <span><input type="radio" name="gender" value="Masculino" checked >-MASCULINO</span>
+                <span><input type="radio" name="gender" value="Femenino"  >-FEMENINO</span>
                </div>
            </div>
 
@@ -48,7 +48,7 @@
                <div>
                     <input type="text"
                      name="services"
-                     placeholder="Separe os serviços por virgula."
+                     placeholder="Separe os serviços por virgula." required
                     >
                </div>
           </div>

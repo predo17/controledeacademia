@@ -32,7 +32,7 @@ header{
 .links a:hover{
     color:var(--subcor);
     transition: color 700ms;
-    border-bottom: var(--subcor) solid ;
+    border-bottom: var(--subcor)  ;
 }
    
 .card{

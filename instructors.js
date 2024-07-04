@@ -8,7 +8,7 @@ exports.show = function(req,res){
     const foundInstructor = data.instructors.find (function(instructor){
         return instructor.id == id
     })
-    if (!foundInstructor) return res.send("Instructor não encontrado")
+        
        
         
 
@@ -20,6 +20,22 @@ exports.show = function(req,res){
 
     return res.render ("instructors/show",{instructor})
 }
+
+exports.editNow = function(req,res){
+    const {id} = req.params
+
+    const foundInstructor = data.instructors.find (function(instructor){
+        return instructor.id == id
+    })
+    if (!foundInstructor) return res.send("Instructor não encontrado")
+       
+        
+
+    
+
+    return res.render ("instructors/edit",{instructor:foundInstructor})
+}
+
 
 exports.post = function(req,res){
    

@@ -124,23 +124,42 @@ input::placeholder{
     font-size: 16px;
     font-weight: normal;
 }
-button[type="submit"]{
+button[type="submit"],a.button{
     padding: 8px 32px;
     background-color: var(--subcor);
     width: 100%;
+    color: white;
     border-radius: 6px;
     margin-top: 32px;
     font-size: 16px;
     font-family: "Anta", sans-serif;
+    transition: 700ms;
 }
 button:hover[type="submit"]{
     padding: 8px 32px;
     width: 100%;
     background-color: aqua;
+    transition: 700ms;
     border-radius: 6px;
     margin-top: 32px;
     font-size: 16px;
     font-family: "Anta", sans-serif;
     cursor: pointer;
 }
+a.button{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    
+    text-decoration: none;
+}
 
+@keyframes up {
+    0%{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100%{
+        opacity: 1;
+    }
+}

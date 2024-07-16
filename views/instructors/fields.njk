@@ -1,44 +1,38 @@
-    <div class="item">
-               <div>Avatar Url -  Copie o link da sua foto</div>
-               <div>
-                <input type="url"
-                name="avatar_URL"value='{{instructor.avatar_URL}}'
-                placeholder= "https://" required
-                >
-               </div>
-           </div>
-           <div class="item">
-            <div>Digite seu Nome</div>
-            <div>
-                <input type="text"
-                name="name" value='{{instructor.name}}'
-                placeholder="Nome do novo instructor" required>
-            </div>
-           </div>
+<div class="item">
+    <div>Digite seu Nome</div>
+        <input type="text" 
+        name="name"
+        placeholder="Nome do novo instructor" value='{{instructor.name}}'>
+ </div>
 
-           <div class="item">
-               <div>Data de Nascimento</div>
-               <div> 
-                <input
-                 type="date" value='{{instructor.birth}}' 
-                 name="birth" required>
-               </div>
-           </div>
+<div class="item">
+    <div>link da sua foto</div>
+     <input type="url"
+     name="avatar_URL" 
+     placeholder= "https://" value='{{instructor.avatar_URL}}'>
+   
+</div>
 
-           <div class="item">
-               <div>Sexo</div>
-               <div>
-                <span><input type="radio" name="gender" value="Masculino" checked >-MASCULINO</span>
-                <span><input type="radio" name="gender" value="Femenino"  required>-FEMENINO</span>
-               </div>
-           </div>
+<div class="item">
+    <div>Data de Nascimento</div>
+    <div>
+     <input
+      type="date" 
+      name="birth" value='{{instructor.birth}}'>
+    </div>
+</div>
 
-          <div class="item">
-               <div>Área de atuação </div>
-               <div>
-                    <input type="text"
-                     name="services" value='{{instructor.services}}'
-                     placeholder="Separe os serviços por virgula." required
-                    >
-               </div>
-     </div>
+<div class="item">
+    <div>Sexo</div>
+    <div>
+     <span><input type="radio" name="gender" value="Masculino" checked >-MASCULINO</span>
+     <span><input type="radio" name="gender" value="Feminino"  >-FEMENINO</span>
+    </div>
+</div>
+
+<div class="item">
+    <div>Área de atuação </div>
+         <input type="text"
+          name="services" 
+          placeholder="Separe os serviços por virgula." value='{{instructor.services}}'>
+</div>

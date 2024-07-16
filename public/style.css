@@ -11,6 +11,7 @@
 body{
     background-color: #252525;
     color: white;
+    
 }
 header{
    padding:  32px;
@@ -150,8 +151,12 @@ a.button{
     display: block;
     box-sizing: border-box;
     text-align: center;
-    
     text-decoration: none;
+    transition: 700ms;
+}
+a.button:hover{
+    background-color: aqua;
+    transition: 700ms;
 }
 
 @keyframes up {

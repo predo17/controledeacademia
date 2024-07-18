@@ -13,6 +13,18 @@ module.exports = {
     
         return age
     
+    },
+
+    date: function (timestamp){
+        const date = new Data (timestamp)
+        //2020 ano
+        const year = date.getFullYear()
+        //04 mm
+        const month = date.getMonth() +1
+        //21 dias
+        const day = date.getDate()
+
+        console.log(`${year}-${month}-${day}`)
     }
     
 }

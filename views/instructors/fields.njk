@@ -23,10 +23,10 @@
 </div>
 
 <div class="item">
-    <div>Sexo</div>
+    <div>Sexo de Natalidade</div>
     <div>
-     <span><input type="radio" name="gender" value="Masculino" checked >-MASCULINO</span>
-     <span><input type="radio" name="gender" value="Feminino"  >-FEMENINO</span>
+     <span><input type="radio" name="gender" value="Masculino"{% if instructor.gender == 'Masculino' %} checked {% endif %} >-MASCULINO</span>
+     <span><input type="radio" name="gender" value="Feminino"{% if  instructor.gender == 'Feminino' %} checked {% endif %} >-FEMENINO</span>
     </div>
 </div>
 

@@ -3,36 +3,35 @@
         <input type="text" 
         name="name"
         placeholder="Nome do novo instructor" value='{{instructor.name}}'>
- </div>
+</div>
 
 <div class="item">
     <div>link da sua foto</div>
-     <input type="url"
-     name="avatar_URL" 
-     placeholder= "https://" value='{{instructor.avatar_URL}}'>
-   
+    <input type="url"
+    name="avatar_URL" 
+    placeholder= "https://" value='{{instructor.avatar_URL}}'>
 </div>
 
 <div class="item">
     <div>Data de Nascimento</div>
     <div>
-     <input
-      type="date" 
-      name="birth" value='{{instructor.birth}}'>
+    <input
+    type="date" 
+    name="birth" value='{{instructor.birth}}'>
     </div>
 </div>
 
 <div class="item">
     <div>Sexo de Natalidade</div>
     <div>
-     <span><input type="radio" name="gender" value="Masculino"{% if instructor.gender == 'Masculino' %} checked {% endif %} >-MASCULINO</span>
-     <span><input type="radio" name="gender" value="Feminino"{% if  instructor.gender == 'Feminino' %} checked {% endif %} >-FEMENINO</span>
+    <span><input type="radio" name="gender" value="Masculino"{% if instructor.gender == 'Masculino' %} checked {% endif %} >-MASCULINO</span>
+    <span><input type="radio" name="gender" value="Feminino"{% if  instructor.gender == 'Feminino' %} checked {% endif %} >-FEMENINO</span>
     </div>
 </div>
 
 <div class="item">
     <div>Área de atuação </div>
-         <input type="text"
-          name="services" 
-          placeholder="Separe os serviços por virgula." value='{{instructor.services}}'>
+        <input type="text"
+        name="services" 
+        placeholder="Separe os serviços por virgula." value='{{instructor.services}}'>
 </div>

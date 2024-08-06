@@ -6,14 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": " npm-run-all -p nodemon ",
-    "nodemon":"nodemon  server.js",
-    "browsersync":"browser-sync start --proxy http://localhost:5000 --files 'public,views' "
+    "nodemon": "nodemon  server.js",
+    "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,views' "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "method-override": "^3.0.0",
     "nunjucks": "^3.2.4"
   },
   "devDependencies": {

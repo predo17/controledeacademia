@@ -6,28 +6,28 @@
     <section class="avatar" style="  background: url({{instructor.avatar_URL}}) no-repeat center center / cover ">       
     </section>
     <section class="details">
-          <h3>Detalhes</h3>
-           <div class="item">
-               <div>Instrutor</div>
-               <div>{{instructor.name}}</div>
-           </div>
-           <div class="item">
-               <div>Idade</div>
-               <div>{{instructor.birth}}</div>
-           </div>
-           <div class="item">
-               <div>Sexo</div>
-               <div>{{instructor.gender}}</div>
-           </div>
-          <div class="item">
-               <div>Acompanhamento</div>
-               <div> {{instructor.services}}</div>
-          </div>
-          <div class="item" >
-               <div>Desde</div>
-               <div>{{instructor.created_at}}</div>
-           </div>
-           <a href="" class="button">Editar</a>
+        <h3>Detalhes</h3>
+        <div class="item">
+            <div>Instrutor</div>
+            <div>{{instructor.name}}</div>
+        </div>
+        <div class="item">
+            <div>Idade</div>
+            <div>{{instructor.birth}}</div>
+        </div>
+        <div class="item">
+            <div>Sexo</div>
+            <div>{{instructor.gender}}</div>
+        </div>
+        <div class="item">
+            <div>Acompanhamento</div>
+            <div> {{instructor.services}}</div>
+        </div>
+        <div class="item" >
+            <div>Desde</div>
+            <div>{{instructor.created_at}}</div>
+        </div>
+        <a href='/instructors/edit/{{instructor.id}}' class='button' > Editar </a>
     </section>
 </div>
 

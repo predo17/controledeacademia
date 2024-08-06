@@ -1,19 +1,29 @@
 {% extends "layout.njk" %}
 
-{% block content  %}
+{% block content %}
 
-<form class="card" method="post" action="/instructors">
-    <section class="avatar" style="background: url('https://th.bing.com/th/id/R.bc1d7426a8e9dde44193b11af877e240?rik=QERPDXsnXQfxGg&riu=http%3a%2f%2fwww.acquaville.com.br%2faulas-de-ginastica%2fimagens%2facademia-de-musculacao-completa.jpg&ehk=60PXzLDV5wzuTHMW%2bhso5dUpa2Li4Rnbm0OoCRexEWk%3d&risl=&pid=ImgRaw&r=0g/') no-repeat center center / cover ">       
-    </section>
-    <section class="details">
 
-          <h3>Editar Instrutor </h3>
-          {% include 'instructors/fields.njk'%}
-          
-        
-        <button type="submit"> SALVAR</button>
+<div class="card">
+  <section class="avatar"
+  style="background: url('https://th.bing.com/th/id/R.bc1d7426a8e9dde44193b11af877e240?rik=QERPDXsnXQfxGg&riu=http%3a%2f%2fwww.acquaville.com.br%2faulas-de-ginastica%2fimagens%2facademia-de-musculacao-completa.jpg&ehk=60PXzLDV5wzuTHMW%2bhso5dUpa2Li4Rnbm0OoCRexEWk%3d&risl=&pid=ImgRaw&r=0g/') no-repeat center center / cover ">     
+  </section>
+  <section class="details">
 
-    </section>
-</form>
 
-{%  endblock  content  %}
+    <form method="post" action="/instructors?_method=PUT">
+      <h3> Editar Instrutor </h3>
+
+      {% include 'instructors/fields.njk' %}
+      <input type="hidden" name="id" value="{{instructor.id}}">
+      <button type="submit">SALVAR</button>
+    </form>
+
+    <form id="form-delete" action="/instructors?_method=DELETE" method="post">
+      <input type="hidden" name="id" value="{{instructor.id}}">
+      <button type="submit">DELETAR</button>
+    </form>
+
+  </section>
+</div>
+{% endblock %}
+

@@ -1,14 +1,14 @@
 
- function poka (timestamp){
-        const date =  (timestamp)
+function poka (timestamp){
+        const date = new Date (timestamp)
 
-        const year = date.getFullYear()
+        const year = date.getUTCFullYear()
 
-        const month = date.getMonth() +1
+        const month = `0${ date.getUTCMonth() +1}`.slice(-2)
 
-        const day = date.getDate() 
+        const day = `0${date.getUTCDate() }`.slice(-2)
 
         console.log(`${year}-${month}-${day}`)
-    
+
 }
-poka (1148688000000)
+poka (-840672000000)

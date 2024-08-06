@@ -119,7 +119,6 @@ input[type="radio"]{
     width: unset;
     margin-right: 16px;
     cursor: pointer;
-   
 }
 input::placeholder{
     font-size: 16px;
@@ -157,6 +156,14 @@ a.button{
 a.button:hover{
     background-color: aqua;
     transition: 700ms;
+}
+#form-delete button{
+    background-color: red;
+    cursor: pointer;
+}
+#form-delete button:hover{
+    background-color: #252525;
+    cursor: pointer;
 }
 
 @keyframes up {

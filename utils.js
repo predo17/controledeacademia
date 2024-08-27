@@ -20,11 +20,11 @@ module.exports = {
         //2020 ano
         const year = date.getUTCFullYear()
         //04 mm
-        const month = `0${date.getUTCMonth() +1}`.slice(-2)
+        const month = `0${ date.getUTCMonth() +1}`.slice(-2)
         //21 dias
-        const day = `0${date.getUTCDate()}`.slice(-2)
+        const day = `0${date.getUTCDate() }`.slice(-2)
 
-        console.log(`${year}-${month}-${day}`)
+        // console.log(`${year}-${month}-${day}`)
         return `${year}-${month}-${day}`
     }
     

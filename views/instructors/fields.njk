@@ -2,7 +2,7 @@
     <div>Digite seu Nome</div>
         <input type="text" 
         name="name"
-        placeholder="Nome do novo instructor" value='{{instructor.name}}'>
+        placeholder="Nome do novo instructor" value='{{instructor.name}}' required>
 </div>
 
 <div class="item">
@@ -17,21 +17,22 @@
     <div>
     <input
     type="date" 
-    name="birth" value='{{instructor.birth}}'>
+    name="birth" value='{{instructor.birth}}' required>
     </div>
 </div>
 
 <div class="item">
-    <div>Sexo de Natalidade</div>
+    <div>Sexo</div>
     <div>
     <span><input type="radio" name="gender" value="Masculino"{% if instructor.gender == 'Masculino' %} checked {% endif %} >-MASCULINO</span>
     <span><input type="radio" name="gender" value="Feminino"{% if  instructor.gender == 'Feminino' %} checked {% endif %} >-FEMENINO</span>
-    </div>
+    <span><input type="radio" name="gender" value="Outros"{% if  instructor.gender == 'Outros' %} checked {% endif %} >-OUTROS</span>
+</div>
 </div>
 
 <div class="item">
     <div>Área de atuação </div>
         <input type="text"
         name="services" 
-        placeholder="Separe os serviços por virgula." value='{{instructor.services}}'>
+        placeholder="Separe os serviços por virgula." value='{{instructor.services}}' required>
 </div>

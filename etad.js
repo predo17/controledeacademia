@@ -11,4 +11,5 @@ function poka (timestamp){
         console.log(`${year}-${month}-${day}`)
 
 }
-poka (-840672000000)
+poka (1182816000000)
+

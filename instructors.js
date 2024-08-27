@@ -2,6 +2,8 @@ const fs = require ("fs")
 const data = require ("./data.json")
 const {age,date} = require("./utils")
 
+
+
 exports.put = function (req,res){
     const {id} = req.body
     let index = 0
